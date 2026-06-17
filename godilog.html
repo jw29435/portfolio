@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Godilog — Johann Wiebe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="identity">
+          <span class="name">Johann Wiebe</span>
+          <span class="separator">/</span>
+          <span class="role">Godilog</span>
+        </a>
+        <nav class="header-nav">
+          <a href="index.html">← Zurück</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <div class="project-hero-meta">
+        <span class="project-type-label">Web App · Firebase Hosting</span>
+        <div class="platform-badges">
+          <a href="https://godilog.jw29435.de" target="_blank" rel="noopener" class="badge badge-live">● Live</a>
+        </div>
+      </div>
+      <h1 class="project-hero-title">Godilog</h1>
+      <p class="project-hero-sub">
+        Gottesdienst Logbuch — digitales Verwaltungssystem für
+        Sonntagsgottesdienste, Prediger und Chorlieder.
+      </p>
+      <div class="hero-stack">
+        <span class="chip">React 19</span>
+        <span class="chip">TypeScript</span>
+        <span class="chip">Firebase</span>
+        <span class="chip">Cloud Functions</span>
+        <span class="chip">GitHub Actions</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="project-page">
+    <div class="container">
+
+      <!-- Was ist es -->
+      <section class="content-section">
+        <h2 class="content-heading">Über das Projekt</h2>
+        <p class="content-text">
+          Godilog entstand aus dem konkreten Bedarf einer Gemeinde, Gottesdienste strukturiert
+          zu erfassen und zu planen. Die App bündelt alles an einem Ort: welcher Prediger
+          hält welchen Gottesdienst, welche Chorlieder werden gesungen und wer hat wann zuletzt
+          vorgetragen.
+        </p>
+        <p class="content-text">
+          Besonders praktisch: Prediger erhalten automatisch eine E-Mail-Erinnerung mit einem
+          persönlichen Link — darüber können sie ihre Predigtinformationen direkt eintragen,
+          ganz ohne eigenen Account.
+        </p>
+      </section>
+
+      <!-- Features -->
+      <section class="content-section">
+        <h2 class="content-heading">Features</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <div class="feature-icon">📅</div>
+            <h3>Gottesdienst-Planung</h3>
+            <p>Gottesdienste erstellen, bearbeiten und in einer übersichtlichen Liste verwalten.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🎙️</div>
+            <h3>Predigerverwaltung</h3>
+            <p>Prediger pflegen, Zuweisung zu Gottesdiensten und Historie auf einen Blick.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🎶</div>
+            <h3>Chor-Tracking</h3>
+            <p>Chorlieder mit Aufführungshistorie — wann wurde welches Lied zuletzt gesungen.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">✉️</div>
+            <h3>Automatische Benachrichtigungen</h3>
+            <p>Cloud Function sendet 4 Tage vor dem Gottesdienst eine E-Mail-Erinnerung an den Prediger.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔗</div>
+            <h3>Öffentliches Prediger-Formular</h3>
+            <p>Prediger füllen Predigtdetails über einen persönlichen Link aus — kein Login nötig.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📥</div>
+            <h3>PDF-Import</h3>
+            <p>Bestehende Predigtpläne als PDF hochladen — werden automatisch geparst und importiert.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="content-section">
+        <h2 class="content-heading">Tech Stack</h2>
+        <div class="stack-overview">
+          <div class="stack-col">
+            <span class="stack-col-label">Frontend</span>
+            <p>React 19 mit TypeScript im Strict-Mode, React Router 7 und React Bootstrap 5. Mehrsprachig (Deutsch / Englisch) via i18next.</p>
+          </div>
+          <div class="stack-col">
+            <span class="stack-col-label">Backend</span>
+            <p>Firebase mit Cloud Firestore als Datenbank, Firebase Storage, Auth (E-Mail + Google) und App Check für Sicherheit.</p>
+          </div>
+          <div class="stack-col">
+            <span class="stack-col-label">Cloud Functions</span>
+            <p>Node.js 22 mit TypeScript — für geplante E-Mail-Erinnerungen via Nodemailer, PDF-Parsing und Datensynchronisation.</p>
+          </div>
+          <div class="stack-col">
+            <span class="stack-col-label">Deployment</span>
+            <p>Automatisches Deployment zu Firebase Hosting und Cloud Functions via GitHub Actions bei jedem Push auf den Master-Branch.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="project-nav-bar">
+    <div class="container">
+      <a href="clr.html" class="pnav-back">← Vorheriges Projekt: CLR by NMBRS</a>
+      <a href="index.html" class="pnav-next">Alle Projekte →</a>
+    </div>
+  </div>
+
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-name">Johann Wiebe</p>
+          <a href="mailto:johannwiebe29@gmail.com" class="footer-email">johannwiebe29@gmail.com</a>
+        </div>
+        <p class="footer-copy">&copy; 2026</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

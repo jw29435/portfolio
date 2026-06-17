@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLR by NMBRS — Johann Wiebe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="identity">
+          <span class="name">Johann Wiebe</span>
+          <span class="separator">/</span>
+          <span class="role">CLR by NMBRS</span>
+        </a>
+        <nav class="header-nav">
+          <a href="index.html">← Zurück</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-hero">
+    <div class="container">
+      <div class="project-hero-meta">
+        <span class="project-type-label">Mobile App · Cross-Platform</span>
+        <div class="platform-badges">
+          <span class="badge badge-android">Android</span>
+          <span class="badge badge-ios">iOS</span>
+          <span class="badge badge-web">Web</span>
+          <span class="badge badge-desktop">Desktop</span>
+        </div>
+      </div>
+      <h1 class="project-hero-title">CLR by NMBRS</h1>
+      <p class="project-hero-sub">
+        Paint-by-Number Generator — aus beliebigen Fotos ein druckbares
+        Malen-nach-Zahlen-Bild erstellen.
+      </p>
+      <div class="hero-stack">
+        <span class="chip">Flutter 3.28</span>
+        <span class="chip">Dart</span>
+        <span class="chip">Firebase</span>
+        <span class="chip">Riverpod</span>
+        <span class="chip">GitHub Actions</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="project-page">
+    <div class="container">
+
+      <!-- Was ist es -->
+      <section class="content-section">
+        <h2 class="content-heading">Über das Projekt</h2>
+        <p class="content-text">
+          CLR by NMBRS verwandelt jedes Foto in ein individuelles Malen-nach-Zahlen-Bild.
+          Nutzer wählen ein Bild aus der Galerie oder machen ein Foto, passen die Farbpalette
+          und den Detailgrad an — und die App generiert daraus ein nummeriertes Kunstwerk,
+          das direkt als PDF exportiert oder geteilt werden kann.
+        </p>
+        <p class="content-text">
+          Projekte werden pro Account in der Cloud gespeichert und können jederzeit
+          wieder aufgerufen, umbenannt oder gelöscht werden.
+        </p>
+      </section>
+
+      <!-- Features -->
+      <section class="content-section">
+        <h2 class="content-heading">Features</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <div class="feature-icon">📷</div>
+            <h3>Bild-Import</h3>
+            <p>Foto aufnehmen oder aus der Galerie wählen — auf allen Plattformen.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🎨</div>
+            <h3>Palette &amp; Detailstufe</h3>
+            <p>Farbanzahl und Detailgrad (Low / Standard / High) frei einstellbar.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">⚙️</div>
+            <h3>Algorithmus</h3>
+            <p>Eigener Bildverarbeitungs-Algorithmus mit Edge-Smoothing, Region-Detection und Farbmapping.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📄</div>
+            <h3>PDF-Export</h3>
+            <p>Fertiges Bild als druckbares PDF exportieren oder direkt teilen.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">☁️</div>
+            <h3>Cloud-Speicherung</h3>
+            <p>Projekte werden per Firebase-Account gespeichert und sind überall abrufbar.</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🔒</div>
+            <h3>Authentifizierung</h3>
+            <p>E-Mail/Passwort, Google Sign-In oder anonym als Gast — flexibel und sicher.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="content-section">
+        <h2 class="content-heading">Tech Stack</h2>
+        <div class="stack-overview">
+          <div class="stack-col">
+            <span class="stack-col-label">Framework</span>
+            <p>Flutter 3.28 mit Dart SDK ^3.6 — eine Codebasis für Android, iOS, Web und Desktop.</p>
+          </div>
+          <div class="stack-col">
+            <span class="stack-col-label">State Management</span>
+            <p>Riverpod für reaktives State-Management — Provider-basiert, typsicher, testbar.</p>
+          </div>
+          <div class="stack-col">
+            <span class="stack-col-label">Backend</span>
+            <p>Firebase-Suite: Auth, Cloud Firestore, Storage, Cloud Functions, Crashlytics, Analytics und App Check mit reCAPTCHA.</p>
+          </div>
+          <div class="stack-col">
+            <span class="stack-col-label">Qualitätssicherung</span>
+            <p>Unit-, Widget- und Integrationstests mit GitHub Actions CI. Coverage-Ziel: 60 % gesamt, 80 %+ für kritische Komponenten.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <div class="project-nav-bar">
+    <div class="container">
+      <a href="index.html" class="pnav-back">← Alle Projekte</a>
+      <a href="godilog.html" class="pnav-next">Nächstes Projekt: Godilog →</a>
+    </div>
+  </div>
+
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-name">Johann Wiebe</p>
+          <a href="mailto:johannwiebe29@gmail.com" class="footer-email">johannwiebe29@gmail.com</a>
+        </div>
+        <p class="footer-copy">&copy; 2026</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

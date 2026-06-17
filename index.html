@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Johann Wiebe — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="identity">
+          <span class="name">Johann Wiebe</span>
+        </a>
+        <nav class="header-nav">
+          <a href="#projects">Projekte</a>
+          <a href="#contact">Kontakt</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="hero-label">Software Developer</p>
+      <h1 class="hero-title">Mobile Apps &amp;<br>Web&shy;anwendungen</h1>
+    </div>
+  </section>
+
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <h2 class="section-title">Projekte</h2>
+      <div class="project-grid">
+
+        <a href="clr.html" class="project-card-link">
+          <article class="project-card project-card--index">
+            <div class="card-top">
+              <div class="card-tag">Mobile App</div>
+              <div class="card-platforms">
+                <span class="badge badge-android">Android</span>
+                <span class="badge badge-ios">iOS</span>
+                <span class="badge badge-web">Web</span>
+              </div>
+            </div>
+            <h3 class="card-title">CLR by NMBRS</h3>
+            <p class="card-desc">
+              Aus jedem Foto ein Malen-nach-Zahlen-Bild generieren —
+              mit wählbarer Farbpalette, Detailstufe und PDF-Export.
+            </p>
+            <div class="card-stack">
+              <span class="chip">Flutter</span>
+              <span class="chip">Dart</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">Riverpod</span>
+            </div>
+            <span class="card-arrow">Mehr erfahren →</span>
+          </article>
+        </a>
+
+        <a href="godilog.html" class="project-card-link">
+          <article class="project-card project-card--index">
+            <div class="card-top">
+              <div class="card-tag">Web App</div>
+              <div class="card-platforms">
+                <span class="badge badge-live">● Live</span>
+              </div>
+            </div>
+            <h3 class="card-title">Godilog</h3>
+            <p class="card-desc">
+              Digitales Logbuch für Gottesdienste — Planung, Predigerzuweisung,
+              Chor-Tracking und automatische E-Mail-Benachrichtigungen.
+            </p>
+            <div class="card-stack">
+              <span class="chip">React</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Firebase</span>
+              <span class="chip">Cloud Functions</span>
+            </div>
+            <span class="card-arrow">Mehr erfahren →</span>
+          </article>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <p class="footer-name">Johann Wiebe</p>
+          <a href="mailto:johannwiebe29@gmail.com" class="footer-email">johannwiebe29@gmail.com</a>
+        </div>
+        <p class="footer-copy">&copy; 2026</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
